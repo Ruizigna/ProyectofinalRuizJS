@@ -1,0 +1,171 @@
+.imagen{
+    max-width:100%;
+}
+
+a{
+    cursor:pointer;
+}
+.alerta{
+    font-weight:700;
+}
+body{
+    background-color: #E3D8D6;
+    overflow-x: hidden;
+}
+.modal-contenedor{
+    display:flex;
+    align-items: center;
+    gap:2rem;
+}
+.img-carrito{
+    width:200px;
+    padding:20px;
+} 
+.modal-content{
+    background-color: #E3D8D6;
+}
+.parrafo{
+    font-weight: 900;
+    font-style: italic;
+}
+#precioTotal{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.boton{
+    opacity:0;
+}
+.logo-wp {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 998;
+    fill: white;
+  }
+   /* * ============================== */
+/* * ====== RESEÑAS ========= */
+/* * ============================== */
+/* Clientes */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards .card{
+    background: #181616;
+    display: flex;
+    width: 36%;
+    height: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    align-items: center;
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+    align-items: center;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+/* * ============================== */
+/* * ====== portafolio ========= */
+/* * ============================== */
+
+.portafolio{
+    background: #f2f2f2;
+    text-align: center;
+    
+    
+}
+.trabajos {
+    font-size: 40px;
+     
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+	padding: 120px;
+    
+}
+
+    
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background:  rgba(126, 106, 46, 0.267);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.hover-galeria img{
+    width: 50px;
+    
+}
+
+.hover-galeria p{
+    color: #fff;
+    
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+.asianfood {
+    background-color:0 0 6px 0 rgba(92, 7, 7, 0.767);
+}
+
+.imgf {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 140%;
+    left: 50%;
+ }

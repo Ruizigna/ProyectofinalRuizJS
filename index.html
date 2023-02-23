@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+  />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Asian Food / Carta</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-dark min-vw-100">
+        <h2 class="p-3 text-white">Asian Food</h2>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              data-bs-toggle="modal"
+              data-bs-target="#modal"
+            >
+              <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/BIENVENIDOSfOOD.png" class="d-block w-100" width="80p" alt="portada maste">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/mster3.png" class="d-block w-100" alt="portada master2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/portadainicio.png" class="d-block w-100" alt="portada master3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="row mt-5" id="contenedor"></div>
+    </main>
+    <div class="logo-wp">
+      <a class="link" href="https://web.whatsapp.com/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-whatsapp"
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+          stroke-width="1"
+          stroke="#00b341"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+          <path
+            d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"
+          />
+        </svg>
+      </a>
+    </div>
+    <div class="container-xl">
+      <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Carrito</h5>
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                Vaciar carrito
+              </button>
+              <button type="button" id="procesarCompra" class="btn btn-primary">
+                Continuar compra
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+
+              <span>Precio total:</span>
+              <p class="text-center" id="precioTotal"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="asianfood">
+      <h1>
+        <img src="./img/ASIAN FOOD.png" class="imgf" alt="logo">
+      </h1>
+      </div> 
+    <section class="portafolio">
+      <div class="contenedor">
+          
+          <div class="galeria-port">
+              <div class="imagen-port">
+                  <img src="./img/2portafolio640.jpg" alt="imagen sushi">
+                  <div class="hover-galeria">
+                      <img src="./img/ASIAN FOOD.png" alt="logo asian food">
+                      <p>Nigiri atun rojo</p>
+                  </div>
+              </div>
+              <div class="imagen-port">
+                  <img src="./img/3portafolio640.jpg" alt="imagen sushi">
+                  <div class="hover-galeria">
+                      <img src="./img/ASIAN FOOD.png" alt="logo asian food">
+                      <p>Sushi</p>
+                  </div>
+              </div>
+              <div class="imagen-port">
+                  <img src="./img/4portafolio640.jpg" alt="imagen sushi">
+                  <div class="hover-galeria">
+                      <img src="./img/ASIAN FOOD.png" alt="logo asian food">
+                      <p>Sashimis</p>
+                  </div>
+              </div>
+              <div class="imagen-port">
+                  <img src="./img/5portafolio640.jpg" alt="imagen sushi">
+                  <div class="hover-galeria">
+                      <img src="./img/ASIAN FOOD.png" alt="logo asian food">
+                      <p>Nuestro Trabajo</p>
+                  </div>
+              </div>
+              <div class="imagen-port">
+                  <img src="./img/6portafolio640.jpg" alt="imagen sushi">
+                  <div class="hover-galeria">
+                      <img src="./img/ASIAN FOOD.png" alt="logo asian food">
+                      <p>Salon</p>
+                  </div>
+              </div>
+              <div class="imagen-port">
+                  <img src="./img/7portafolio640.jpg" alt="imagen salon">
+                  <div class="hover-galeria">
+                      <img src="./img/ASIAN FOOD.png" alt="logo asian food">
+                      <p>Nigiri salmon</p>
+                  </div>
+              </div>
+              <div class="imagen-port">
+                  <img src="./img/8portafolio640.jpg" alt="imagen sushi">
+                  <div class="hover-galeria">
+                      <img src="./img/ASIAN FOOD.png" alt="logo asian food">
+                      <p>Palitos</p>
+                  </div>
+              </div>
+              <div class="imagen-port">
+                  <img src="./img/rolloveg.jpg" alt="imagen palitos">
+                  <div class="hover-galeria">
+                      <img src="./img/ASIAN FOOD.png" alt="logo asian food">
+                      <p>Rollos Veggies</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+   <br>
+
+    <section class="clientes contenedor">
+      
+      <div class="cards">
+          <div class="card">
+              <img src="./img/retrato-hermosa-modelo-rubia-sonriente-vestida-ropa-hipster-verano_158538-5483 (1).webp" alt="persona1">
+              <div class="contenido-texto-card">
+                  <h4>Natalia Rodriguez</h4>
+                  <p>Restaurante chic y elegante. El servicio es bueno y el sushi delicioso! </p>
+              </div>
+          </div>
+          <div class="card">
+              <img src="./img/face2.jpg" alt="persona2">
+              <div class="contenido-texto-card">
+                  <h4>Rocio Gutierrez</h4>
+                  <p>Sabores muy originales si te atreves a explorar nuevos sabores y apreciarlos. El servicio fue excelente</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <br>
+  <br>
+
+    <div class="contenedor-imagen">
+      <img src="./img/quienesfooter.png" alt="imagen foot">
+      </div>
+
+    
+<footer class="text-center text-lg-start bg-light text-muted">
+  
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    
+
+    
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    
+  </section>
+  
+
+  
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      
+      <div class="row mt-3">
+        
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>ASIAN FOOD
+          </h6>
+          <p>
+            Somos un espacio en el cual mostramos nuestra aventura de hace mas de 10 años en Asia donde fuimos en búsqueda de buenas olas y grandes ideas.
+                    Es un lugar en el que no solo rendimos tributo a la gastronomia Asiatica sino tambien a la de nuestro pais.  Es un ambiente vibrante capaz de contagiar a todos nuestros clientes una energia especial, la que nos ha permitido cruzar fronteras y posicionarnos como una marca exitosa no solo en Mar del plata sino en toda la Argentina.
+          </p>
+        </div>
+        
+
+        
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            Redes sociales
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Instagram</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Facebook</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Twitter </a>
+          </p>
+         
+        </div>
+        
+        
+
+        
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Rawson esq Olavarria. Mar del plata, Bs As - Argentina</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            Asianfood@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> (0223) 4867799</p>
+          <p><i class="fas fa-print me-3"></i> (0223) 5864593</p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">© 2021 Copyright: 2022 Asian Food. Todos los derechos reservados.</a>
+  </div>
+  
+</footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
