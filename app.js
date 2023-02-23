@@ -269,7 +269,7 @@ function procesarPedido() {
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Finalizar compra';
-      alert('Correo enviado, gracias por su compra!');
+      alert('Correo enviado, gracias por elegirnos!');
     }, (err) => {
       btn.value = 'Finalizar compra';
       alert(JSON.stringify(err));

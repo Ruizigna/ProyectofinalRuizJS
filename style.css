@@ -45,6 +45,12 @@ a{
     z-index: 998;
     fill: white;
   }
+  h1{
+    color: black;
+	font-family: 'Lora', serif;
+    text-align: center;
+}
+
    /* * ============================== */
 /* * ====== RESEÑAS ========= */
 /* * ============================== */
@@ -88,7 +94,7 @@ a{
     padding-top: 5px;
 }
 /* * ============================== */
-/* * ====== portafolio ========= */
+/* * ====== Portafolio imagenes  ========= */
 /* * ============================== */
 
 .portafolio{
